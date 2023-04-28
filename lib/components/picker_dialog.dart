@@ -2,6 +2,7 @@ import 'package:chat_app/consts/colors.dart';
 import 'package:chat_app/consts/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 Widget pickerDialog(context, controller) {
@@ -34,11 +35,11 @@ Widget pickerDialog(context, controller) {
                   switch (index) {
                     case 0:
                       Get.back();
-                      controller.getImage();
+                      controller.pickImage(context, ImageSource.camera);
                       break;
                     case 1:
                       Get.back();
-                      controller.getsImage();
+                      controller.pickImage(context, ImageSource.gallery);
                       break;
                     case 2:
                       Get.back();

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:chat_app/components/picker_dialog.dart';
 import 'package:chat_app/consts/colors.dart';
 import 'package:chat_app/consts/firebase_const.dart';
@@ -53,10 +55,14 @@ class ProfileScreen extends StatelessWidget {
                       backgroundColor: btnColor,
                       child: Stack(
                         children: [
-                          Image.asset(
-                            icUser,
-                            color: Colors.white,
-                          ),
+                          controller.imagePath.isEmpty
+                              ? Image.asset(
+                                  icUser,
+                                  color: Colors.white,
+                                )
+                              : Image.file(
+                                  File(controller.imagePath.value),
+                                ).box.roundedFull.clip(Clip.antiAlias).make(),
                           Positioned(
                             right: 0,
                             bottom: 20,

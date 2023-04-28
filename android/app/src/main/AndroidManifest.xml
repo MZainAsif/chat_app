@@ -9,14 +9,6 @@
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="andriod.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="andriod.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="andriod.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="andriod.permission.MODIFY_AUDIO_SETTINGS"/>
-    <uses-permission android:name="andriod.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="andriod.permission.BLUETOOTH"/>
-    <uses-permission android:name="andriod.permission.FOREGROUND_SERVICE"/>
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
-    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
    <application
         android:label="chat_app"
         android:name="${applicationName}"
